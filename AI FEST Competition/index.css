@@ -1,0 +1,291 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ :root {
+   --main-font: 'Roboto', sans-serif;
+ }
+
+
+ /* Header Stylings */
+ .top-header {
+   display: flex;
+   justify-content: space-evenly;
+   gap: 170px;
+   font-family: var(--main-font);
+   font-size: x-large;
+   font-weight: normal;
+
+
+ }
+
+ .top-header div img {
+   width: 250px;
+ }
+
+ .top-header a {
+   margin-top: 100px;
+   color: black;
+   position: relative;
+   text-decoration: none;
+   display: inline-block;
+   position: relative;
+
+ }
+
+
+ .top-header a::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 110px;
+   /* Adjust this value as per your preference */
+   width: 100%;
+   height: 3px;
+   background-color: darkblue;
+   transform: scaleX(0);
+   transform-origin: bottom left;
+   transition: transform 0.3s ease-in-out;
+ }
+
+ .top-header a:hover::after {
+   transform: scaleX(1);
+ }
+
+ .top-header a:hover {
+   transform: scale(1.05);
+   transition: all ease 1s;
+ }
+
+ .banner-content {
+   text-align: center;
+ }
+
+
+ .banner {
+   position: relative;
+   height: 600px;
+   background-image: url('./7c10cb76-5915-47e8-a71c-3751d7eccbcd\ 2.png');
+   background-size: cover;
+   background-position: center;
+   margin-top: 1in;
+   font-family: var(--main-font);
+   font-size: xx-large;
+   line-height: 1.05in;
+
+ }
+
+ .banner-content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+ .driverless-car-section {
+   margin-top: 80px;
+   display: grid;
+   grid-template-columns: 3fr 3fr;
+   gap: 32px;
+ }
+
+ .driverless-car-section img {
+   width: 562px;
+   height: 283px;
+   margin-left: 2.5in;
+   width: 50%;
+ }
+
+ .driverless-car-section p {
+   font-family: var(--main-font);
+   font-size: 29px;
+   font-style: normal;
+   font-weight: 500;
+   margin-right: 2.5in;
+
+ }
+
+ .sample-text {
+   font-family: var(--main-font);
+   font-weight: 500;
+   font-size: 22px;
+   text-align: center;
+   margin-top: 1.5in;
+   margin-left: 2in;
+   margin-right: 2in;
+ }
+ /* Team Tree Styling*/
+
+ .team-section {
+   text-align: center;
+ }
+
+ .team-section-heading {
+   line-height: 2.5in;
+   /* margin-top: 1.5in; */
+   font-family: var(--main-font);
+   font-size: xx-large;
+   font-weight: bolder;
+ }
+
+ .khurram-section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 5px solid lightblue;
+   border-radius: 25px;
+   padding: 20px;
+   width: fit-content;
+   max-width: 35%;
+ }
+
+ .wrapper {
+   display: flex;
+   justify-content: center;
+ }
+
+ .Arrow {
+   display: flex;
+   justify-content: center;
+
+ }
+
+ .wrapper1 {
+   display: flex;
+   justify-content: center;
+
+ }
+
+ .senior-research-assistants {
+
+   display: flex;
+   gap: 70px;
+   border: 5px solid lightblue;
+   border-radius: 25px;
+   padding: 20px;
+   width: fit-content;
+ }
+
+ .Senior-Research-Assistants-heading {
+   margin-left: 1in;
+ }
+
+ .wrapper2 {
+   display: flex;
+   justify-content: center;
+ }
+
+ .research-assistant-heading {
+   margin-left: 0.85in;
+ }
+
+ .research-assistant {
+   display: flex;
+   gap: 30px;
+   margin-top: 5%;
+   margin-left: 5%;
+   border: 5px solid lightblue;
+   border-radius: 25px;
+   padding: 20px;
+   width: fit-content;
+ }
+
+ .wrapper3 {
+   margin-top: 8%;
+   display: flex;
+   justify-content: center;
+   background-color: #659DD1;
+   border: black 5px solid;
+   border-radius: 25px;
+
+ }
+ /*Become a sponser styling */
+
+ .sponser-section {
+   display: flex;
+   gap: 20px;
+   font-family: var(--main-font);
+   color: white;
+   width: 80%;
+   margin-top: 2%;
+   margin-bottom: 2%;
+
+ }
+
+ .sponser-section button {
+  margin-top: 5%;
+  margin-left: 50%;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-family: var(--main-font);
+  font-weight: bold;
+  border-radius: 50px;
+  border: 2px solid white;
+  font-size: 18px;
+ }
+ .sponser-section button:hover
+ {
+  color: white;
+  background-color: lightblue;
+  border: black 2px solid;
+  transition: all ease 0.5s;
+  transform: scale(1.1);
+ }
+ .sponser-section-heading
+ {
+  margin-left: 40%;
+  margin-bottom: 5%;
+  font-size: 29px;
+ }
+ /* Sponser Logos Styling */
+ .logos
+ {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 8%;
+
+ }
+ /* footer styling */
+ .last-footer
+ {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin-top: 8%;
+  font-family: var(--main-font);
+ }
+ .contact-section
+ {
+  max-width: 25%;
+ }
+
+ .facbook-link-section i
+ {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  position: relative;
+  left: 2in;
+  margin-top: 5%;
+  margin-right: 3%;
+ }
+ .facbook-link-section p
+ {
+  font-size: x-large;
+ }
+ /* copywrite styling */
+ .copyright
+ {
+    background-color: white;
+    color: black;
+    font-family: var(--main-font);
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+
+ }
